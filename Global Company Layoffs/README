@@ -1,1 +1,19 @@
+# Layoffs Data Cleaning & Exploratory Data Analysis
 
+Real-world dataset of global tech company layoffs. Cleaned the raw data then explored it to find trends.
+
+## Dataset
+layoffs.csv — columns include company, industry, total_laid_off, percentage_laid_off, date, stage, country, funds_raised_millions
+
+## Data Cleaning
+Removed duplicates using `ROW_NUMBER()`, standardized inconsistent values, converted date from text to `DATE` type, handled NULLs, and dropped useless rows.
+
+## Exploratory Data Analysis
+Explored layoffs by company, industry, year, and stage. Built a rolling monthly total and ranked the top 5 companies per year using `DENSE_RANK()`.
+
+## Files
+| File | Description |
+|------|-------------|
+| `layoffs.csv` | Raw dataset |
+| `data_cleaning.sql` | Data cleaning process |
+| `exploratory_data_analysis.sql` | EDA queries |
