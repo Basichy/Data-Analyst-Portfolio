@@ -3,7 +3,7 @@
 Real-world dataset of global tech company layoffs. Cleaned the raw data then explored it to find trends.
 
 ## Dataset
-Source: [Layoffs.fyi](https://layoffs.fyi) — columns include company, industry, total_laid_off, percentage_laid_off, date, stage, country, funds_raised_millions
+layoffs.csv — columns include company, industry, total_laid_off, percentage_laid_off, date, stage, country, funds_raised_millions
 
 ## Data Cleaning
 Removed duplicates using `ROW_NUMBER()`, standardized inconsistent values, converted date from text to `DATE` type, handled NULLs, and dropped useless rows.
@@ -15,5 +15,5 @@ Explored layoffs by company, industry, year, and stage. Built a rolling monthly 
 | File | Description |
 |------|-------------|
 | `layoffs.csv` | Raw dataset |
-| `data_cleaning.sql` | Data cleaning process |
-| `exploratory_data_analysis.sql` | EDA queries |
+| `Data Cleaning for (layoffs).sql` | Data cleaning process |
+| `Exploratory Data Analysis.sql` | EDA queries |
